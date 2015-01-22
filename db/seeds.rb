@@ -21,7 +21,6 @@
 ].each do |param|
   Configuration.find_or_create_by_config_key(param)
 end
-
 [
   {"config_key" => "AvailableModules"                ,"config_value" => "HR"},
   {"config_key" => "AvailableModules"                ,"config_value" => "Finance"}
@@ -42,7 +41,6 @@ if GradingLevel.count == 0
   end
 end
 
-
 if User.first( :conditions=>{:admin=>true}).blank?
 
   employee_category = EmployeeCategory.find_or_create_by_prefix(:name => 'System Admin',:prefix => 'Admin',:status => true)
@@ -55,10 +53,10 @@ if User.first( :conditions=>{:admin=>true}).blank?
 
   employee = Employee.find_or_create_by_employee_number(:employee_number => 'admin',:joining_date => Date.today,:first_name => 'Admin',:last_name => 'User',
     :employee_department_id => employee_department.id,:employee_grade_id => employee_grade.id,:employee_position_id => employee_position.id,:employee_category_id => employee_category.id,:status => true,:nationality_id =>'76', :date_of_birth => Date.today-365, :email => 'noreply@fedena.com')
-
   employee.user.update_attributes(:admin=>true,:employee=>false)
   
 end
+
 
 [
   {"name" => 'Salary'         ,"description" => ' ',"is_income" => false },

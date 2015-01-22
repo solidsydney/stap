@@ -1,25 +1,25 @@
 development:
       host: localhost
       adapter: mysql
-      database: fedena_ultimate
+      database: schol_dev
       port: 3306
       username: root
-      password: foradian
+      password: hetalksinme2
 
 test: &test
       host: localhost
       adapter: mysql
-      database: fedena_two_new
+      database: schol_test
       port: 3306
       username: root
-      password: foradian
+      password: hetalksinme2
 
 production:
       host: localhost
       adapter: mysql
-      database: fedena_ultimate
+      database: schol_prod
       port: 3306
       username: root
-      password: foradian
+      password: hetalksinme2
 cucumber:
   <<: *test
