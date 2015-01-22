@@ -8816,3 +8816,33 @@ Rendering user/login
   [4;36;1mSchoolDetail Load (0.3ms)[0m   [0;1mSELECT * FROM `school_details` LIMIT 1[0m
   [4;35;1mSchoolDetail Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `school_details`[0m
 Completed in 310ms (View: 130, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2015-01-22 16:04:06) [GET]
+  Parameters: {"action"=>"login", "controller"=>"user"}
+  [4;35;1mConfiguration Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.1ms)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'Locale') LIMIT 1[0m
+  [4;35;1mNews Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `news`[0m
+Expired fragment: views/News_latest_fragment (0.0ms)
+  [4;36;1mConfiguration Load (0.1ms)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'LogoName') LIMIT 1[0m
+Rendering template within layouts/login
+Rendering user/login
+  [4;35;1mSchoolDetail Load (0.2ms)[0m   [0mSELECT * FROM `school_details` LIMIT 1[0m
+  [4;36;1mSchoolDetail Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `school_details`[0m
+Completed in 333ms (View: 25, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2015-01-22 16:04:25) [GET]
+  Parameters: {"action"=>"login", "controller"=>"user"}
+  [4;36;1mConfiguration Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mConfiguration Load (0.2ms)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'Locale') LIMIT 1[0m
+  [4;36;1mNews Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `news`[0m
+Expired fragment: views/News_latest_fragment (0.0ms)
+  [4;35;1mConfiguration Load (0.1ms)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'LogoName') LIMIT 1[0m
+Rendering template within layouts/login
+Rendering user/login
+  [4;36;1mSchoolDetail Load (0.2ms)[0m   [0;1mSELECT * FROM `school_details` LIMIT 1[0m
+  [4;35;1mSchoolDetail Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `school_details`[0m
+Completed in 335ms (View: 27, DB: 4) | 200 OK [http://localhost/]
