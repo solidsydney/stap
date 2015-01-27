@@ -1,0 +1,17 @@
+sms_settings:
+ username: emp
+ password: emp
+ sendername: stap
+ host_url: http://api.infobip.com/api/v3/sendsms/plain
+ success_code: "0"
+
+parameter_mappings:
+ username: user
+ password: password
+ sendername: sender
+ message: SMSText
+ phone: GSM
+
+# Additional parameters to be added should given in the format "param1=value1&param2=value2&..."
+additional_parameters: ""
+ 
